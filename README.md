@@ -22,7 +22,7 @@ Both models incorporate **CBAM attention modules**, enabling the visualization o
 
 ## 📂 Project Structure
 
-FingerAlphaNet/
+```FingerAlphaNet/
 │
 ├── README.md
 ├── requirements.txt
@@ -66,7 +66,7 @@ FingerAlphaNet/
 └── examples/
 ├── test_single_image.py
 └── demo_attention_overlay.py
-
+```
 
 ---
 
@@ -96,11 +96,13 @@ The **CBAM (Convolutional Block Attention Module)** combines **Channel** and **S
 | Learns *what* to focus on | Learns *where* to focus on |
 
 Visualizations can be generated using:
-bash python scripts/visualize_attention.py
-
+```bash
+python scripts/visualize_attention.py
+```
 
 ## ⚙️ Installation
 1. Clone the Repository
+```
 git clone https://github.com/yourusername/FingerAlphaNet.git
 cd FingerAlphaNet
 
@@ -134,8 +136,8 @@ Checkpoints will be saved under /checkpoints.
 
 To evaluate a trained model:
 
-python scripts/evaluate_model.py --checkpoint checkpoints/FingerAlphaNetM_epoch20.pth.tar
-
+```python scripts/evaluate_model.py --checkpoint checkpoints/FingerAlphaNetM_epoch20.pth.tar
+```
 
 Metrics such as accuracy, F1-score, and confusion matrix will be displayed.
 
@@ -143,8 +145,8 @@ Metrics such as accuracy, F1-score, and confusion matrix will be displayed.
 
 To visualize CBAM attention maps on sample test images:
 
-python scripts/visualize_attention.py
-
+```python scripts/visualize_attention.py
+```
 
 Outputs include:
 
@@ -155,7 +157,7 @@ Spatial attention overlays
 Feature activation visualization
 
 ## 📦 Requirements
-torch>=2.0
+```torch>=2.0
 torchvision
 pandas
 numpy
@@ -164,25 +166,25 @@ seaborn
 opencv-python
 scikit-learn
 tqdm
-
+```
 ## 🧑‍💻 Example Inference
 
 To classify a single image:
 
-python examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
-
+```python examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
+```
 ## 🧾 Citation
 
 If you use this repository, please cite:
 
-@misc{FingerAlphaNet2025,
+```@misc{FingerAlphaNet2025,
   title={FingerAlphaNet: Deep Sign Language Recognition with CBAM Attention},
   author={Your Name},
   year={2025},
   howpublished={GitHub repository},
   url={https://github.com/yourusername/FingerAlphaNet}
 }
-
+```
 ## 🧰 License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
