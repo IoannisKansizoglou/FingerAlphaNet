@@ -27,6 +27,7 @@ FingerAlphaNet/
 │
 ├── README.md
 ├── requirements.txt
+├── LICENSE
 ├── .gitignore
 │
 ├── data/
