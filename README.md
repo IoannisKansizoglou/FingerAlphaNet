@@ -116,7 +116,7 @@ pip install -r requirements.txt
 
 The project uses the Sign Language MNIST dataset from Kaggle.
 You can download it manually from the link below:
-\url{https://www.kaggle.com/datasets/datamunge/sign-language-mnist}
+https://www.kaggle.com/datasets/datamunge/sign-language-mnist
 
 ## 👉 Sign Language MNIST on Kaggle
 
@@ -179,13 +179,7 @@ opencv-python
 scikit-learn
 tqdm
 ```
-## 🧑‍💻 Example Inference
 
-To classify a single image:
-
-```bash
-python examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
-```
 ## 🧾 Citation
 
 If you use this repository, please cite:
