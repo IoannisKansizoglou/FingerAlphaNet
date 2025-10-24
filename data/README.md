@@ -22,6 +22,7 @@ After downloading, place the CSV files in this folder:
 data/
 ├── sign_mnist_train.csv
 └── sign_mnist_test.csv
+```
 
 * sign_mnist_train.csv — Training data
 * sign_mnist_test.csv — Test/validation data
