@@ -96,10 +96,10 @@ The **CBAM (Convolutional Block Attention Module)** combines **Channel** and **S
 | Learns *what* to focus on | Learns *where* to focus on |
 
 Visualizations can be generated using:
-```bash
-python scripts/visualize_attention.py
+bash python scripts/visualize_attention.py
 
-⚙️ Installation
+
+## ⚙️ Installation
 1. Clone the Repository
 git clone https://github.com/yourusername/FingerAlphaNet.git
 cd FingerAlphaNet
@@ -107,12 +107,12 @@ cd FingerAlphaNet
 2. Install Dependencies
 pip install -r requirements.txt
 
-📊 Dataset
+## 📊 Dataset
 
 The project uses the Sign Language MNIST dataset from Kaggle.
 You can download it manually from the link below:
 
-👉 Sign Language MNIST on Kaggle
+## 👉 Sign Language MNIST on Kaggle
 
 After downloading, place the CSV files in:
 
@@ -120,7 +120,7 @@ data/
 ├── sign_mnist_train.csv
 └── sign_mnist_test.csv
 
-🏋️ Training
+## 🏋️ Training
 Classic CNN (FingerAlphaNet)
 python scripts/train_fingeralphanet.py --epochs 20 --batch-size 128 --lr 1e-3
 
@@ -130,7 +130,7 @@ python scripts/train_fingeralphanet_m.py --epochs 20 --batch-size 128 --lr 1e-3
 
 Checkpoints will be saved under /checkpoints.
 
-📈 Evaluation
+## 📈 Evaluation
 
 To evaluate a trained model:
 
@@ -139,7 +139,7 @@ python scripts/evaluate_model.py --checkpoint checkpoints/FingerAlphaNetM_epoch2
 
 Metrics such as accuracy, F1-score, and confusion matrix will be displayed.
 
-🔍 Visualization
+## 🔍 Visualization
 
 To visualize CBAM attention maps on sample test images:
 
@@ -154,7 +154,7 @@ Spatial attention overlays
 
 Feature activation visualization
 
-📦 Requirements
+## 📦 Requirements
 torch>=2.0
 torchvision
 pandas
@@ -165,13 +165,13 @@ opencv-python
 scikit-learn
 tqdm
 
-🧑‍💻 Example Inference
+## 🧑‍💻 Example Inference
 
 To classify a single image:
 
 python examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
 
-🧾 Citation
+## 🧾 Citation
 
 If you use this repository, please cite:
 
@@ -183,11 +183,11 @@ If you use this repository, please cite:
   url={https://github.com/yourusername/FingerAlphaNet}
 }
 
-🧰 License
+## 🧰 License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
 
-🌟 Acknowledgements
+## 🌟 Acknowledgements
 
 Dataset: Sign Language MNIST (Kaggle)
 
