@@ -171,7 +171,8 @@ tqdm
 
 To classify a single image:
 
-```python examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
+```python
+examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
 ```
 ## 🧾 Citation
 
