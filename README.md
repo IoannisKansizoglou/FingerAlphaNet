@@ -22,7 +22,8 @@ Both models incorporate **CBAM attention modules**, enabling the visualization o
 
 ## 📂 Project Structure
 
-```FingerAlphaNet/
+```bash
+FingerAlphaNet/
 │
 ├── README.md
 ├── requirements.txt
@@ -102,33 +103,41 @@ python scripts/visualize_attention.py
 
 ## ⚙️ Installation
 1. Clone the Repository
-```
+```bash
 git clone https://github.com/yourusername/FingerAlphaNet.git
 cd FingerAlphaNet
+```
 
 2. Install Dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ## 📊 Dataset
 
 The project uses the Sign Language MNIST dataset from Kaggle.
 You can download it manually from the link below:
+\url{https://www.kaggle.com/datasets/datamunge/sign-language-mnist}
 
 ## 👉 Sign Language MNIST on Kaggle
 
 After downloading, place the CSV files in:
 
+```bash
 data/
 ├── sign_mnist_train.csv
 └── sign_mnist_test.csv
+```
 
 ## 🏋️ Training
 Classic CNN (FingerAlphaNet)
+```bash
 python scripts/train_fingeralphanet.py --epochs 20 --batch-size 128 --lr 1e-3
+```
 
 Separable CNN (FingerAlphaNet.m)
+```bash
 python scripts/train_fingeralphanet_m.py --epochs 20 --batch-size 128 --lr 1e-3
-
+```
 
 Checkpoints will be saved under /checkpoints.
 
@@ -136,7 +145,8 @@ Checkpoints will be saved under /checkpoints.
 
 To evaluate a trained model:
 
-```python scripts/evaluate_model.py --checkpoint checkpoints/FingerAlphaNetM_epoch20.pth.tar
+```bash
+python scripts/evaluate_model.py --checkpoint checkpoints/FingerAlphaNetM_epoch20.pth.tar
 ```
 
 Metrics such as accuracy, F1-score, and confusion matrix will be displayed.
@@ -145,7 +155,8 @@ Metrics such as accuracy, F1-score, and confusion matrix will be displayed.
 
 To visualize CBAM attention maps on sample test images:
 
-```python scripts/visualize_attention.py
+```bash
+python scripts/visualize_attention.py
 ```
 
 Outputs include:
@@ -157,7 +168,8 @@ Spatial attention overlays
 Feature activation visualization
 
 ## 📦 Requirements
-```torch>=2.0
+```bash
+torch>=2.0
 torchvision
 pandas
 numpy
@@ -171,8 +183,8 @@ tqdm
 
 To classify a single image:
 
-```python
-examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
+```bash
+python examples/test_single_image.py --image path/to/image.png --model checkpoints/FingerAlphaNetM_epoch20.pth.tar
 ```
 ## 🧾 Citation
 
