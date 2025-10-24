@@ -12,8 +12,8 @@ This folder contains pretrained models for **FingerAlphaNet** and **FingerAlphaN
 
 | Model | Epoch | Description | Download Link |
 |-------|-------|-------------|---------------|
-| FingerAlphaNet | 20 | Classic CNN with CBAM | [Download](https://drive.google.com/your_classic_model_link) |
-| FingerAlphaNet.m | 20 | Separable CNN with CBAM (compressed) | [Download](https://drive.google.com/your_separable_model_link) |
+| FingerAlphaNet | 20 | Classic CNN with CBAM | [Download](https://drive.google.com/file/d/1rrO60SGjnRSTRZw0g33iBCT5tHaFPt-k/view?usp=sharing) |
+| FingerAlphaNet.m | 20 | Separable CNN with CBAM (compressed) | [Download](https://drive.google.com/file/d/1H7-PUhNIi_SWG41UEAWVzMtWcLCOHSGA/view?usp=sharing) |
 
 ---
 
