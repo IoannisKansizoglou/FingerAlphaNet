@@ -1,6 +1,6 @@
 # 🖐️ FingerAlphaNet
 
-Deep Learning for **Sign Language Recognition** using classic and separable convolutional architectures with **CBAM (Convolutional Block Attention Module)** for attention-based interpretability.
+Deep Learning for **Sign Language Recognition** using two convolutional architectures with **CBAM (Convolutional Block Attention Module)** for attention-based interpretability.
 
 This repository contains two main models:
 - **FingerAlphaNet** — a classic convolutional neural network for Sign Language MNIST.
@@ -12,7 +12,7 @@ Both models incorporate **CBAM attention modules**, enabling the visualization o
 
 ## 🚀 Features
 
-- **Depthwise Separable Convolutions:** Efficient CNN design inspired by MobileNet.
+- **Classic and Separable Convolutions:** Trade-off between performance and computational efficiency.
 - **CBAM Attention Mechanism:** Enhances focus on key spatial and channel features.
 - **High Accuracy:** Trained on Sign Language MNIST (25 classes).
 - **Modular Codebase:** Separate folders for datasets, models, utilities, and training scripts.
@@ -22,7 +22,7 @@ Both models incorporate **CBAM attention modules**, enabling the visualization o
 
 ## 📂 Project Structure
 
-```bash
+```markdown
 FingerAlphaNet/
 │
 ├── README.md
@@ -55,18 +55,7 @@ FingerAlphaNet/
 │ └── visualize_attention.py
 │
 ├── checkpoints/
-│ ├── FingerAlphaNet_epoch20.pth.tar
-│ ├── FingerAlphaNetM_epoch20.pth.tar
-│ └── README.md
-│
-├── notebooks/
-│ ├── FingerAlphaNet_Training.ipynb
-│ ├── FingerAlphaNetM_Training.ipynb
-│ └── CBAM_Visualization.ipynb
-│
-└── examples/
-├── test_single_image.py
-└── demo_attention_overlay.py
+  └── README.md
 ```
 
 ---
@@ -77,7 +66,8 @@ FingerAlphaNet/
 A classic CNN model for sign language image classification.
 - Convolutional layers with ReLU and BatchNorm  
 - Max pooling for spatial downsampling  
-- Fully connected layers for classification  
+- Fully connected layers for classification
+- CBAM modules at multiple convolutional layers  
 
 ### **2️⃣ FingerAlphaNet.m (CBAMClassifierCompressed)**
 An optimized variant using:
@@ -122,7 +112,7 @@ https://www.kaggle.com/datasets/datamunge/sign-language-mnist
 
 After downloading, place the CSV files in:
 
-```bash
+```text
 data/
 ├── sign_mnist_train.csv
 └── sign_mnist_test.csv
@@ -160,7 +150,7 @@ python scripts/visualize_attention.py
 ```
 
 ## 📦 Requirements
-```bash
+```text
 torch>=2.0
 torchvision
 pandas
@@ -176,7 +166,8 @@ tqdm
 
 If you use this repository, please cite:
 
-```@misc{FingerAlphaNet2025,
+```bibtex
+@misc{FingerAlphaNet2025,
   title={FingerAlphaNet: Deep Sign Language Recognition with CBAM Attention},
   author={Your Name},
   year={2025},
