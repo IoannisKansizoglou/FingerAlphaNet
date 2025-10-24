@@ -159,14 +159,6 @@ To visualize CBAM attention maps on sample test images:
 python scripts/visualize_attention.py
 ```
 
-Outputs include:
-
-Channel attention heatmaps
-
-Spatial attention overlays
-
-Feature activation visualization
-
 ## 📦 Requirements
 ```bash
 torch>=2.0
@@ -198,8 +190,6 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 
 ## 🌟 Acknowledgements
 
-Dataset: Sign Language MNIST (Kaggle)
-
-CBAM: Woo et al., "CBAM: Convolutional Block Attention Module", ECCV 2018
-
-PyTorch Open Source Community
+* Dataset: Sign Language MNIST (Kaggle)
+* CBAM: Woo et al., "CBAM: Convolutional Block Attention Module", ECCV 2018
+* PyTorch Open Source Community
