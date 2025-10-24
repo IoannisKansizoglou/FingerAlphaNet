@@ -168,12 +168,11 @@ tqdm
 If you use this repository, please cite:
 
 ```bibtex
-@misc{FingerAlphaNet2025,
-  title={FingerAlphaNet: Deep Sign Language Recognition with CBAM Attention},
-  author={Your Name},
+@misc{kansizoglou2025fingeralphanet,
+  title={FingerAlphaNet: Real-time sign language alphabet recognition with attention-enhanced convolutional neural networks for inclusive human-computer interaction},
+  author={Ioannis Kansizoglou, Vasileios Sevetlidis, Christos Kokkotis, Antonios Gasteratos},
   year={2025},
-  howpublished={GitHub repository},
-  url={https://github.com/yourusername/FingerAlphaNet}
+  url={https://github.com/IoannisKansizoglou/FingerAlphaNet}
 }
 ```
 ## 🧰 License
