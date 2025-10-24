@@ -95,7 +95,7 @@ python scripts/visualize_attention.py
 ## ⚙️ Installation
 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/FingerAlphaNet.git
+git clone https://github.com/IoannisKansizoglou/FingerAlphaNet
 cd FingerAlphaNet
 ```
 
